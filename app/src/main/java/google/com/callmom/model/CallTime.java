@@ -11,6 +11,9 @@ public class CallTime extends RealmObject {
     private int hour;
     private int minute;
 
+    public CallTime() {
+    }
+
     public CallTime(int hour, int minute) {
         this.hour = hour;
         this.minute = minute;

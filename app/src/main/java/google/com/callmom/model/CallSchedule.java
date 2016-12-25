@@ -12,6 +12,9 @@ public class CallSchedule extends RealmObject{
     private CallTime from;
     private CallTime to;
 
+    public CallSchedule() {
+    }
+
     public CallSchedule(int callInWeek, CallTime from, CallTime to) {
         this.callInWeek = callInWeek;
         this.from = from;

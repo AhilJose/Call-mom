@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'realm-android'
+apply plugin: 'me.tatarka.retrolambda'
+
 
 android {
     compileSdkVersion 25
@@ -11,9 +13,6 @@ android {
         versionCode 1
         versionName "0.0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        jackOptions {
-            enabled true
-        }
     }
     buildTypes {
         release {
@@ -40,5 +39,7 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     compile 'com.miguelcatalan:materialsearchview:1.4.0'
     compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'me.grantland:autofittextview:0.2.+'
+
 }

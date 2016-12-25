@@ -25,18 +25,25 @@ public class CustomRelativeLayout extends RelativeLayout {
     }
 
     public float getXFraction() {
-        return CustomLayoutHelper.getXFraction(this);
+        if (getWidth() != 0)
+            return getX() / getWidth();
+        else return 0;// TODO: guard divide-by-zero
     }
 
     public void setXFraction(float xFraction) {
-        CustomLayoutHelper.setXFraction(this, xFraction);
+        // TODO: cache width
+        final int width = getWidth();
+        setTranslationX((width > 0) ? (xFraction * width) : -9999);
     }
 
     public float getYFraction() {
-        return CustomLayoutHelper.getYFraction(this);
+        if (getHeight() != 0)
+            return getY() / getHeight();
+        else return 0;
     }
 
     public void setYFraction(float yFraction) {
-        CustomLayoutHelper.setYFraction(this, yFraction);
+        final int height = getHeight();
+        setTranslationY((height > 0) ? (yFraction * height) : -9999);
     }
 }

@@ -32,7 +32,7 @@ public class ViewHelper {
         FragmentTransaction transaction =
                 fragmentManager
                         .beginTransaction()
-                        .setCustomAnimations(R.animator.slide_in_left, R.animator.slide_out_left, R.animator.slide_in_right, R.animator.slide_out_right)
+                        .setCustomAnimations(R.animator.slide_in_right, R.animator.slide_out_left, R.animator.slide_in_left, R.animator.slide_out_right)
                         .replace(R.id.body_fragment, fragment);
         if (addToBackStack)
             transaction.addToBackStack(backStackKey);

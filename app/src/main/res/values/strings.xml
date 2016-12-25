@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Call mom</string>
+    <string name="retry_button">RE-TRY</string>
+    <string name="im_sure_button">I\'M SURE</string>
+    <string name="allow_button">ALLOW</string>
+    <string name="i_dont_want_button">I DON\'T WANT</string>
+    <string name="permission_rationale">Without this permission we can\'t determine your contact and you can\'t call your mom. Are you sure you want to deny this permission?</string>
+    <string name="permission_rationale_storage">We noticed that you have rejected some of the solutions and selected \"Never ask again\". Without this permission we can\'t determine your contact and you can\'t call your mom</string>
+
 </resources>

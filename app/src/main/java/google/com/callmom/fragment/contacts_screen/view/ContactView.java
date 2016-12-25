@@ -3,6 +3,8 @@ package google.com.callmom.fragment.contacts_screen.view;
 import android.content.Context;
 import android.view.View;
 
+import butterknife.OnClick;
+import google.com.callmom.R;
 import google.com.callmom.fragment.base_fragment.view.BaseView;
 import google.com.callmom.fragment.contacts_screen.presenter.IContactPresenter;
 
@@ -18,4 +20,10 @@ public class ContactView extends BaseView implements IContactView {
         super(root, context);
         this.presenter = presenter;
     }
+
+    @OnClick(R.id.add_button)
+    void onAddBackClicked(){
+        presenter.onAddBackClicked();
+    }
+
 }

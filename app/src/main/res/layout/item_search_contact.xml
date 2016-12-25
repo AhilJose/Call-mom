@@ -4,7 +4,8 @@
     android:layout_height="70dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    app:cardCornerRadius="4dp">
+    app:cardCornerRadius="4dp"
+    android:layout_marginTop="4dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -27,15 +28,17 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="12dp"
             android:layout_marginRight="12dp"
-            android:layout_width="50dp"
-            android:layout_height="50dp"/>
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
 
         <me.grantland.widget.AutofitTextView
+            android:typeface="serif"
+            android:id="@+id/name_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/avatar_image_view"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:text="Mama"
             android:maxLines="2"
             android:layout_toLeftOf="@+id/arrow_image_view"/>

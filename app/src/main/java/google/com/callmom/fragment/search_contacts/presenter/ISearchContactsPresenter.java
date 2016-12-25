@@ -9,4 +9,6 @@ public interface ISearchContactsPresenter extends IBasePresenter {
     void onQuerySearchTextSubmit(String query);
 
     void onQuerySearchTextChange(String newText);
+
+    void onBackButtonClicked();
 }

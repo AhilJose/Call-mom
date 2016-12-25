@@ -12,11 +12,22 @@ public class Contact extends RealmObject {
     @PrimaryKey
     private String name;
     private String number;
+    private String avatarUri;
     private CallSchedule callSchedule;
 
-    public Contact(String name, String number, CallSchedule callSchedule) {
+    public Contact() {
+    }
+
+    public Contact(String name, String number, String avatarUri) {
         this.name = name;
         this.number = number;
+        this.avatarUri = avatarUri;
+    }
+
+    public Contact(String name, String number, String avatarUri, CallSchedule callSchedule) {
+        this.name = name;
+        this.number = number;
+        this.avatarUri = avatarUri;
         this.callSchedule = callSchedule;
     }
 
@@ -42,5 +53,13 @@ public class Contact extends RealmObject {
 
     public void setCallSchedule(CallSchedule callSchedule) {
         this.callSchedule = callSchedule;
+    }
+
+    public String getAvatarUri() {
+        return avatarUri;
+    }
+
+    public void setAvatarUri(String avatarUri) {
+        this.avatarUri = avatarUri;
     }
 }

@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import google.com.callmom.fragment.base_fragment.view.IBaseView;
+
 /**
  * Created by Sergey on 25.12.2016.
  */
@@ -14,6 +16,7 @@ import android.view.ViewGroup;
 public abstract class BasePresenter extends Fragment implements IBasePresenter {
 
     private View root;
+    private IBaseView view;
 
     @Nullable
     @Override
@@ -26,7 +29,7 @@ public abstract class BasePresenter extends Fragment implements IBasePresenter {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        createView(view);
+        this.view = createView(view);
         onFinishCreatingView();
     }
 
@@ -36,7 +39,7 @@ public abstract class BasePresenter extends Fragment implements IBasePresenter {
 
     protected abstract int getLayoutId();
 
-    protected abstract void createView(View root);
+    protected abstract IBaseView createView(View root);
 
     public View getRoot() {
         return root;

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/arrow_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:tint="@color/action_bar_color"
+            android:src="@drawable/ic_keyboard_arrow_left_white_36dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/avatar_placeholder"
+            android:id="@+id/avatar_image_view"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/avatar_image_view"
+            android:textSize="24sp"
+            android:text="Mama"
+            android:maxLines="2"
+            android:layout_toLeftOf="@+id/arrow_image_view"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

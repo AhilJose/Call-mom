@@ -274,13 +274,8 @@
 
             <Button
                 android:id="@+id/cancel_button"
-                android:background="@color/contact_info_button_color"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_marginRight="3dp"
-                android:textColor="@color/white"
                 android:text="@string/cancel_button_text"
-                android:layout_height="match_parent" />
+                style="@style/edit_contact_action_button" />
 
             <Button
                 android:id="@+id/add_button"

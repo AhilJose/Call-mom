@@ -20,4 +20,10 @@
 
     </RelativeLayout>
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </google.com.callmom.view.custom_layouts.CustomRelativeLayout>

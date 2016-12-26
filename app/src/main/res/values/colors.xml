@@ -9,5 +9,6 @@
     <color name="item_text_color">#1a1a1a</color>
     <color name="divider_color">#8c8c8c</color>
     <color name="contact_info_button_color">#4527A0</color>
+    <color name="contact_info_button_color_pressed">#3c1d9b</color>
     <color name="search_contact_pressed_color">#e4e4e4</color>
 </resources>

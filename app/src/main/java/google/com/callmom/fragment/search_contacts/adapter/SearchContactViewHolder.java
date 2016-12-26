@@ -1,7 +1,6 @@
 package google.com.callmom.fragment.search_contacts.adapter;
 
 import android.content.Context;
-import android.graphics.Typeface;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -37,8 +36,8 @@ public class SearchContactViewHolder extends RecyclerView.ViewHolder {
     }
 
     private void setupView() {
-        Typeface type = Typeface.createFromAsset(context.getAssets(),"font/avenir/Anonymous_Pro.ttf");
-        nameTextView.setTypeface(type);
+//        Typeface type = Typeface.createFromAsset(context.getAssets(),"font/avenir/Anonymous_Pro.ttf");
+//        nameTextView.setTypeface(type);
     }
 
     public void bind(Contact contact, Action<Contact> contactClickedListener) {

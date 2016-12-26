@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     app:cardCornerRadius="4dp"
+    android:background="@drawable/search_contact_item_background"
     android:layout_marginTop="4dp">
 
     <RelativeLayout
@@ -32,14 +33,14 @@
             android:layout_height="40dp"/>
 
         <me.grantland.widget.AutofitTextView
-            android:typeface="serif"
             android:id="@+id/name_text_view"
+            android:textColor="@color/item_text_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/avatar_image_view"
             android:textSize="18sp"
-            android:text="Mama"
+            android:text="Павел"
             android:maxLines="2"
             android:layout_toLeftOf="@+id/arrow_image_view"/>
 

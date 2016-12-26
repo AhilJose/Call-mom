@@ -6,5 +6,7 @@
     <string name="i_dont_want_button">I DON\'T WANT</string>
     <string name="permission_rationale">Without this permission we can\'t determine your contact and you can\'t call your mom. Are you sure you want to deny this permission?</string>
     <string name="permission_rationale_storage">We noticed that you have rejected some of the solutions and selected \"Never ask again\". Without this permission we can\'t determine your contact and you can\'t call your mom</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="add_button_text">Add</string>
 
 </resources>

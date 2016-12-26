@@ -8,7 +8,6 @@ import google.com.callmom.fragment.base_fragment.presenter.BasePresenter;
 import google.com.callmom.fragment.base_fragment.view.IBaseView;
 import google.com.callmom.fragment.contacts_screen.view.ContactView;
 import google.com.callmom.fragment.search_contacts.presenter.SearchContactsPresenter;
-import google.com.callmom.view.ViewHelper;
 
 /**
  * Created by Sergey on 25.12.2016.
@@ -30,6 +29,6 @@ public class ContactPresenter extends BasePresenter implements IContactPresenter
 
     @Override
     public void onAddBackClicked() {
-        ((MainActivity)getActivity()).showSearchContactFragment();
+        ((MainActivity)getActivity()).showFragmentFromRight(new SearchContactsPresenter(), true, null);
     }
 }

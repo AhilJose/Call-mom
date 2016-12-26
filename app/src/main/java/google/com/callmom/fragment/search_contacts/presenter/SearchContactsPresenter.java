@@ -8,7 +8,9 @@ import android.view.View;
 import java.util.ArrayList;
 
 import google.com.callmom.R;
+import google.com.callmom.activity.MainActivity;
 import google.com.callmom.fragment.base_fragment.presenter.BasePresenter;
+import google.com.callmom.fragment.contact_info.presenter.ContactInfoPresenter;
 import google.com.callmom.fragment.search_contacts.adapter.SearchContactAdapter;
 import google.com.callmom.fragment.search_contacts.view.ISearchContactsView;
 import google.com.callmom.fragment.search_contacts.view.SearchContactsView;
@@ -86,7 +88,8 @@ public class SearchContactsPresenter extends BasePresenter implements ISearchCon
     }
 
     private void onContactClicked(Contact contact){
-
+        ContactInfoPresenter presenter = ContactInfoPresenter.createInstance(contact);
+        ((MainActivity)getActivity()).showFragmentFromRight(presenter, true, null);
     }
 
     @Override

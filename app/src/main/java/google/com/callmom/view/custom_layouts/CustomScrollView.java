@@ -2,25 +2,23 @@ package google.com.callmom.view.custom_layouts;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 
 /**
- * Created by Sergey on 25.12.2016.
+ * Created by Sergey on 26.12.2016.
  */
 
-public class CustomRelativeLayout extends RelativeLayout {
-    float xFraction;
-    float yFraction;
+public class CustomScrollView extends ScrollView {
 
-    public CustomRelativeLayout(Context context) {
+    public CustomScrollView(Context context) {
         super(context);
     }
 
-    public CustomRelativeLayout(Context context, AttributeSet attrs) {
+    public CustomScrollView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public CustomRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CustomScrollView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
@@ -39,4 +37,5 @@ public class CustomRelativeLayout extends RelativeLayout {
     public void setYFraction(float yFraction) {
         CustomLayoutHelper.setYFraction(this, yFraction);
     }
+
 }
